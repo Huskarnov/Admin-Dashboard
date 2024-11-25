@@ -56,7 +56,7 @@ table {
 section{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
+    /* height: 100vh; */
 
     font-family: "roboto";
 }
@@ -65,7 +65,7 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     align-content: start;
-    row-gap: 35px;
+    row-gap: 50px;
 
     background-color: #1992D4;
     
@@ -77,9 +77,11 @@ section{
 }
 
 .logo{
-    padding: 10px;
+    padding: 18px;
 
-    font-weight: 500; color: white; font-size: 22px;
+    font-weight: 500;
+     color: white;
+      font-size: 30px;
 
     display: grid;
     grid-template-columns: auto-fit 1fr ;
@@ -95,22 +97,22 @@ section{
 
 .logo img{
     margin-right: 10px;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
 }
 
 .navigation, .technical{
     display: grid;
     /* grid-template-columns: 1fr; */
     row-gap: 10px;
-    padding-left: 15px;
+    padding-left: 25px;
     
-    font-size: 14px; font-weight: 500; color: white;
+    font-size: 22px; font-weight: 500; color: white;
 }
 
 
 .left svg{
-    height: 14px; width: 14px;
+    height: 22px; width: 22px;
     padding-right: 10px;
 }
 
@@ -159,6 +161,7 @@ section{
 .header-top >svg:nth-child(1){
     grid-column: 1/2;
     justify-self: center;
+    font-size: 30px;
     
 }
 
@@ -172,19 +175,20 @@ section{
     border-radius: 15px;
     text-indent: 10px;
 
-
+    height: 30px;
+    font-size: 22px;
 
 }
 
 .header-top >svg:nth-child(3){
     grid-column: 17/18;
     justify-self: end;
-
+    font-size: 30px;
 }
 
 .header-top img{
     grid-column: 18/19;
-    height: 25px; width: 30px;
+    height: 50px; width: 55px;
     justify-self: end;
 
 }
@@ -193,7 +197,7 @@ section{
     grid-column: 19/21;
     justify-self: center;
 
-    font-size: 12px; font-weight: 700;
+    font-size: 22px; font-weight: 700;
     
 
 }
@@ -215,19 +219,25 @@ section{
     justify-self: left;
 }
 
+.header-bot img{
+    height: 70px; width: 78px;
+    margin-right: 15px;
+}
+
 .header-bot-left > div > p:nth-child(1){
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 700;
 }
 .header-bot-left > div > p:nth-child(2){
     
     font-weight: 800;
+    font-size: 25px;
 }
 
 .header-bot-right{
     display: grid;
     grid-auto-flow: column;
-    gap: 15px;
+    gap: 30px;
     justify-self: end;
 }
 
@@ -236,8 +246,8 @@ section{
     
     background-color: #1992D4;
 
-    width: 80px; height: 30px;
-    font-size: 14px;
+    width: 140px; height: 50px;
+    font-size: 22px;
     border:none;
     border-radius: 30px;
     /* padding: 10px 40px; */
@@ -249,9 +259,7 @@ section{
 
 
 
-.header-bot img{
-    height: 50px; width: 55px;
-}
+
 
 
 
@@ -259,4 +267,85 @@ section{
 .main{
     background-color: #E2E8F0;
     box-shadow: inset 0 3px 3px #2b2b2b29;
+
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.main-left
+{
+ padding: 40px 20px 0 20px
+}
+
+.main-left > h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+.card{
+
+    display: grid;
+    grid-template: 3fr 1fr/1fr;
+
+    background-color: white;
+    border-radius: 5px;
+
+    padding: 35px 25px 15px 25px;
+    
+}
+
+.card-top > p:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-top > p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    color: #474747;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+
+.card-bot{
+    font-size: 26px;
+    justify-self: end;
+    align-self: center;
+    letter-spacing: 20px;
+}
+
+.card-bot svg{
+    cursor: pointer;
+}
+
+
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+/* /////////////////////////////////////////////// */
+
+.main-right
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+
+padding: 40px 20px 0 20px
+
+}
+
+.main-right .announcements > h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main-right .announcement-list{
+    background-color: white;
 }
